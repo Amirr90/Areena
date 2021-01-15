@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Areena</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_upload_document">UploadDocumentActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Setting</string>
+    <string name="title_activity_update_profile">UpdateProfileActivity</string>
+    <string name="tutor_heading">Update Profile information</string>
+
+    <string-array name="choices">
+        <item>All Subjects</item>
+        <item>Math</item>
+        <item>Science(Phy,Che,Bio)</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>English</item>
+        <item>Biology</item>
+        <item>Commerce</item>
+        <item>Computer</item>
+        <item>Hindi</item>
+        <item>Social Science</item>
+    </string-array>
+    <string-array name="choices_class">
+        <item>Class I to V</item>
+        <item>Class I to VIII</item>
+        <item>Class I to X</item>
+        <item>Class I to XII</item>
+        <item>Class VIII to X</item>
+        <item>Class VIII to XII</item>>
+    </string-array>
+    <string-array name="choices_gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Any</item>
+    </string-array>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_tution_detail">TutionDetail</string>
+    <string name="title_activity_payment_page">PaymentPage</string>
+</resources>

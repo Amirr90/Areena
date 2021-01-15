@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:elevation="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/notification_lay"
+        android:background="@color/colortransparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/antic"
+            android:text="send you request for demo class for 9th standard student"
+            android:textColor="@color/default_inactive_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_below="@+id/user_name"
+            android:paddingRight="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antic"
+            android:text="10 mins ago" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_below="@+id/user_name"
+            android:layout_margin="@dimen/_10sdp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:gravity="center"
+                android:id="@+id/accept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/round_textview"
+                android:fontFamily="@font/antic"
+                android:text="Accept"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/decline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/next_btn"
+                android:fontFamily="@font/antic"
+                android:text="DECLINE"
+                android:textColor="@color/default_inactive_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_below="@+id/timestamp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#242323"/>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

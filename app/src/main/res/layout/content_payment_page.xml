@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PaymentPage"
+    tools:showIn="@layout/activity_payment_page">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/antic"
+        android:padding="@dimen/_10sdp"
+        android:text="Pay ₹10 to buy Tuition Lead"
+        android:textAlignment="center"
+        android:textColor="@color/default_inactive_color"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView6">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_grp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/next_btn"
+            android:fontFamily="@font/antic"
+            android:onClick="StartTransaction"
+            android:padding="@dimen/_10sdp"
+            android:text="PAY"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button2"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/antic"
+            android:padding="@dimen/_10sdp"
+            android:text="note: 1 Credit equivalent ₹1"
+            android:textColor="@color/default_shape_inactive_color"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/antic"
+            android:padding="10dp"
+            android:text="ADD"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView16"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/antic"
+            android:padding="10dp"
+            android:text="ADD"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/merchant_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView17"
+            android:layout_marginTop="25dp"
+            android:layout_toLeftOf="@+id/credits"
+            android:fontFamily="@font/antic"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView17"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/antic"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="Credits"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/insufficient_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/merchant_wallet"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/antic"
+            android:paddingRight="10dp"
+            android:text="insufficient wallet"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/radio_grp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/antic"
+                android:padding="@dimen/_10sdp"
+                android:text="PayTm"
+                android:textSize="18sp" />
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/antic"
+                android:padding="@dimen/_10sdp"
+                android:text="PhonePay"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/antic"
+                android:padding="@dimen/_10sdp"
+                android:text="Wallet"
+                android:textSize="18sp" />
+
+
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

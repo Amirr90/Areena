@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffff4444</color>
+    <color name="colorPrimaryDark">#DF3333</color>
+    <color name="colorAccent">#ffff4444</color>
+    <color name="pending_status_color">#ffff8800</color>
+    <color name="menu_icon_color">#444B54</color>
+    <color name="colortransparent">#7099B2CE</color>
+    <color name="background_color">#19070707</color>
+    <color name="lisght_grey">#C8929191</color>
+    <color name="default_inactive_color">#212121</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#C62828</color>
+    <color name="btnRegister">#83838c</color>
+</resources>
